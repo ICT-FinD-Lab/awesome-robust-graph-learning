@@ -15,7 +15,7 @@ Robust graph learning is to develop learning algorithms that maintain predictive
 
 **More items will be added to the repository**.
 Please feel free to suggest other key resources by opening an issue report,
-submitting a pull request, or dropping me an email @ (liuyang2023@ict.ac.cn).
+submitting a pull request, or dropping me an email @ (liuyang173@mails.ucas.edu.cn).
 Enjoy reading!
 
 
