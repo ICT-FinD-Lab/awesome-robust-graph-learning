@@ -112,11 +112,7 @@ XGBOD: improving supervised outlier detection with unsupervised representation l
 4.1. Conferences & Workshops
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Key data mining conference **deadlines**, **historical acceptance rates**, and more
-can be found `data-mining-conferences <https://github.com/yzhao062/data-mining-conferences>`_.
-
-
-`ACM International Conference on Knowledge Discovery and Data Mining (SIGKDD) <http://www.kdd.org/conferences>`_. **Note**: SIGKDD usually has an Outlier Detection Workshop (ODD), see `ODD 2021 <https://oddworkshop.github.io/>`_.
+`ACM International Conference on Knowledge Discovery and Data Mining (SIGKDD) <http://www.kdd.org/conferences>`_. 
 
 `ACM International Conference on Management of Data (SIGMOD) <https://sigmod.org/>`_
 
