@@ -1,27 +1,6 @@
 ﻿Awesome Robust Graph Learning Resources
 ====================================
 
-.. image:: https://img.shields.io/github/stars/yzhao062/anomaly-detection-resources.svg
-   :target: https://github.com/yzhao062/anomaly-detection-resources/stargazers
-   :alt: GitHub stars
-
-
-.. image:: https://img.shields.io/github/forks/yzhao062/anomaly-detection-resources.svg?color=blue
-   :target: https://github.com/yzhao062/anomaly-detection-resources/network
-   :alt: GitHub forks
-
-
-.. image:: https://img.shields.io/github/license/yzhao062/anomaly-detection-resources.svg?color=blue
-   :target: https://github.com/yzhao062/anomaly-detection-resources/blob/master/LICENSE
-   :alt: License
-
-
-.. image:: https://awesome.re/badge-flat2.svg
-   :target: https://awesome.re/badge-flat2.svg
-   :alt: Awesome
-
-
-
 ----
 
 Robust graph learning is to develop learning algorithms that maintain predictive accuracy and stability in the presence of structural noise, adversarial perturbations, and out-of-distribution (OOD) shifts.
@@ -61,7 +40,7 @@ Table of Contents
 =============  =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
 Data Types     Paper Title                                                                                        Venue                         Year   Ref                           Materials
 =============  =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
-Graph          GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection                           NeurIPS                       2023   [#Tang2023GADBench]_          `[PDF] <https://arxiv.org/abs/2306.12251>`_, `[Code] <https://github.com/squareRoot3/GADBench>`_
+Graph          GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection                           NeurIPS                       2023   [#Aggarwal2013Outlier]_          `[PDF] <https://arxiv.org/abs/2306.12251>`_, `[Code] <https://github.com/squareRoot3/GADBench>`_
 
 =============  =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
 
@@ -72,7 +51,7 @@ Graph          GADBench: Revisiting and Benchmarking Supervised Graph Anomaly De
 ===================================================== ============================================  =====  ============================  ==========================================================================================================================================================================
 Tutorial Title                                        Venue                                         Year   Ref                           Materials
 ===================================================== ============================================  =====  ============================  ==========================================================================================================================================================================
-Trustworthy Anomaly Detection                         SDM                                           2024   [#Yuan2024Trustworthy]_       `[HTML] <https://yuan.shuhan.org/talks/SDM24/>`_
+Trustworthy Anomaly Detection                         SDM                                           2024   [#Aggarwal2013Outlier]_       `[HTML] <https://yuan.shuhan.org/talks/SDM24/>`_
 
 ===================================================== ============================================  =====  ============================  ==========================================================================================================================================================================
 
@@ -97,7 +76,7 @@ Trustworthy Anomaly Detection                         SDM                       
 ==============================================================================================================  ============================  =====  ============================  =====================================================================================================================================================================================
 Paper Title                                                                                                     Venue                         Year   Ref                           Materials
 ==============================================================================================================  ============================  =====  ============================  =====================================================================================================================================================================================
-AD-LLM: Benchmarking Large Language Models for Anomaly Detection                                                ACL 2025 Findings             2024   [#Yang2024ADLLM]_             `[PDF] <https://arxiv.org/abs/2412.11142>`_, `[Code] <https://github.com/USC-FORTIS/AD-LLM>`_
+AD-LLM: Benchmarking Large Language Models for Anomaly Detection                                                ACL 2025 Findings             2024   [#Abe2006Outlier]_             `[PDF] <https://arxiv.org/abs/2412.11142>`_, `[Code] <https://github.com/USC-FORTIS/AD-LLM>`_
 ==============================================================================================================  ============================  =====  ============================  =====================================================================================================================================================================================
 
 
@@ -108,10 +87,10 @@ AD-LLM: Benchmarking Large Language Models for Anomaly Detection                
 =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
 Paper Title                                                                                        Venue                         Year   Ref                           Materials
 =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
-Clustering with Outlier Removal                                                                    TKDE                          2019   [#Liu2018Clustering]_         `[PDF] <https://arxiv.org/pdf/1801.01899.pdf>`_
-Real-World Anomaly Detection by using Digital Twin Systems and Weakly-Supervised Learning          IEEE Trans. Ind. Informat.    2020   [#Castellani2020Siamese]_     `[PDF] <https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9179030>`_
-SSD: A Unified Framework for Self-Supervised Outlier Detection                                     ICLR                          2021   [#Sehwag2021SSD]_             `[PDF] <https://openreview.net/pdf?id=v5gjXpmR8J>`_, `[Code] <https://github.com/inspire-group/SSD>`_
-AD-LLM: Benchmarking Large Language Models for Anomaly Detection                                   Preprint                      2024   [#Yang2024ADLLM]_             `[PDF] <https://arxiv.org/abs/2412.11142>`_, `[Code] <https://github.com/USC-FORTIS/AD-LLM>`_
+Clustering with Outlier Removal                                                                    TKDE                          2019   [#Abe2006Outlier]_           `[PDF] <https://arxiv.org/pdf/1801.01899.pdf>`_
+Real-World Anomaly Detection by using Digital Twin Systems and Weakly-Supervised Learning          IEEE Trans. Ind. Informat.    2020   [#Abe2006Outlier]_           `[PDF] <https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9179030>`_
+SSD: A Unified Framework for Self-Supervised Outlier Detection                                     ICLR                          2021   [#Aggarwal2013Outlier]_             `[PDF] <https://openreview.net/pdf?id=v5gjXpmR8J>`_, `[Code] <https://github.com/inspire-group/SSD>`_
+AD-LLM: Benchmarking Large Language Models for Anomaly Detection                                   Preprint                      2024   [#Aggarwal2013Outlier]_             `[PDF] <https://arxiv.org/abs/2412.11142>`_, `[Code] <https://github.com/USC-FORTIS/AD-LLM>`_
 =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
 
 
