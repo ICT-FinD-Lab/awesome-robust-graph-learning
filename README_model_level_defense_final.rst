@@ -94,7 +94,7 @@ NetFense: Adversarial Defenses against Privacy Attacks on Neural Networks for Gr
 Locally Private Graph Neural Networks                                                              ACM CCS                       2021   [#Sajadmanesh2021Locally]_     `[PDF] <https://arxiv.org/pdf/2006.05535>`_, `[Code] <https://github.com/sisaman/LPGNN>`_
 Releasing Graph Neural Networks with Differential Privacy Guarantees                               AISec Workshop                2021   [#Olatunji2021Releasing]_      `[PDF] <https://arxiv.org/pdf/2109.08907>`_
 GAP: Differentially Private Graph Neural Networks with Aggregation Perturbation                    USENIX Security               2023   [#Sajadmanesh2023GAP]_         `[PDF] <https://www.usenix.org/system/files/sec23fall-prepub-196-sajadmanesh.pdf>`_, `[Code] <https://github.com/sisaman/GAP>`_
-SecGNN: Privacy-Preserving Graph Neural Network Training and Inference as a Cloud Service         IEEE TSC                      2023   [#Wang2023SecGNN]_             `[Paper] <https://www.computer.org/csdl/journal/sc/2023/04/10035510/1Krc3O7eDkc>`_
+SecGNN: Privacy-Preserving Graph Neural Network Training and Inference as a Cloud Service          IEEE TSC                      2023   [#Wang2023SecGNN]_             `[Paper] <https://www.computer.org/csdl/journal/sc/2023/04/10035510/1Krc3O7eDkc>`_
 MDP: Privacy-Preserving GNN Based on Matrix Decomposition and Differential Privacy                 IEEE JCC                      2023   [#Xu2023MDP]_                  `[Paper] <https://www.computer.org/csdl/proceedings-article/jcc/2023/285500a038/1Q3JXMAGcM0>`_
 On Strengthening and Defending Graph Reconstruction Attack with Markov Chain Approximation         ICML                          2023   [#Zhou2023On]_                 `[PDF] <https://proceedings.mlr.press/v202/zhou23s/zhou23s.pdf>`_, `[Code] <https://github.com/AndrewZhou924/MC-GRA>`_
 OblivGNN: Oblivious Inference on Transductive and Inductive Graph Neural Networks                  USENIX Security               2024   [#Xu2024OblivGNN]_             `[PDF] <https://www.usenix.org/system/files/usenixsecurity24-xu-zhibo.pdf>`_
@@ -171,22 +171,23 @@ References
 
 .. [#Ahmed2016A] Ahmed, M., Mahmood, A.N. and Islam, M.R., 2016. A survey of anomaly detection techniques in financial domain. *Future Generation Computer Systems*\ , 55, pp.278-288.
 
-.. [#Hsieh2023NetFense] I.-C. Hsieh and C.-T. Li, *NetFense: Adversarial Defenses against Privacy Attacks on Neural Networks for Graph Data*, IEEE Transactions on Knowledge and Data Engineering, 2023.
+.. [#Hsieh2023NetFense] Hsieh, I.-C. and Li, C.-T., 2023. NetFense: Adversarial Defenses against Privacy Attacks on Neural Networks for Graph Data. *IEEE Transactions on Knowledge and Data Engineering*\ , 35(1), pp.796-809.
 
-.. [#Sajadmanesh2021Locally] S. Sajadmanesh and D. Gatica-Perez, *Locally Private Graph Neural Networks*, ACM CCS, 2021.
+.. [#Sajadmanesh2021Locally] Sajadmanesh, S. and Gatica-Perez, D., 2021. Locally Private Graph Neural Networks. In *Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security*, pp.2130-2145.
 
-.. [#Olatunji2021Releasing] I. E. Olatunji, W. Nejdl, and M. Khosla, *Releasing Graph Neural Networks with Differential Privacy Guarantees*, AISec, 2021.
+.. [#Olatunji2021Releasing] Olatunji, I.E., Nejdl, W. and Khosla, M., 2021. Releasing Graph Neural Networks with Differential Privacy Guarantees. In *Proceedings of the 14th ACM Workshop on Artificial Intelligence and Security*, pp.31-40.
 
-.. [#Sajadmanesh2023GAP] S. Sajadmanesh et al., *GAP: Differentially Private Graph Neural Networks with Aggregation Perturbation*, USENIX Security, 2023.
+.. [#Sajadmanesh2023GAP] Sajadmanesh, S., Shamsabadi, A.S., Bellet, A. and Gatica-Perez, D., 2023. GAP: Differentially Private Graph Neural Networks with Aggregation Perturbation. In *32nd USENIX Security Symposium (USENIX Security 23)*, pp.3223-3240.
 
-.. [#Wang2023SecGNN] S. Wang, Y. Zheng, and X. Jia, *SecGNN: Privacy-Preserving Graph Neural Network Training and Inference as a Cloud Service*, IEEE TSC, 2023.
+.. [#Wang2023SecGNN] Wang, S., Zheng, Y. and Jia, X., 2023. SecGNN: Privacy-Preserving Graph Neural Network Training and Inference as a Cloud Service. *IEEE Transactions on Services Computing*\ , 16(4), pp.2923-2938.
 
-.. [#Xu2023MDP] W. Xu et al., *MDP: Privacy-Preserving GNN Based on Matrix Decomposition and Differential Privacy*, IEEE JCC, 2023.
+.. [#Xu2023MDP] Xu, W., Shi, B., Zhang, J., Feng, Z., Pan, T. and Dong, B., 2023. MDP: Privacy-Preserving GNN Based on Matrix Decomposition and Differential Privacy. In *2023 IEEE 14th International Conference on Joint Cloud Computing (JCC)*, pp.38-45.
 
-.. [#Zhou2023On] Z. Zhou et al., *On Strengthening and Defending Graph Reconstruction Attack with Markov Chain Approximation*, ICML, 2023.
+.. [#Zhou2023On] Zhou, Z., Zhou, C., Li, X., Yao, J., Yao, Q. and Han, B., 2023. On Strengthening and Defending Graph Reconstruction Attack with Markov Chain Approximation. In *Proceedings of the 40th International Conference on Machine Learning (ICML)*, pp.41803-41833.
 
-.. [#Xu2024OblivGNN] Z. Xu et al., *OblivGNN: Oblivious Inference on Transductive and Inductive Graph Neural Network*, USENIX Security, 2024.
+.. [#Xu2024OblivGNN] Xu, Z., Lai, S., Liu, X., Abuadbba, A., Yuan, X. and Yi, X., 2024. OblivGNN: Oblivious Inference on Transductive and Inductive Graph Neural Network. In *33rd USENIX Security Symposium (USENIX Security 24)*, pp.2209-2226.
 
-.. [#Lou2025GRID] J. Lou et al., *GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models*, IEEE S\&P, 2025.
+.. [#Lou2025GRID] Lou, J., Yuan, X., Zhang, R., Yuan, X., Gong, N.Z. and Tzeng, N.-F., 2025. GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models. In *2025 IEEE Symposium on Security and Privacy (IEEE S\&P 2025)*, pp.2095-2113.
 
-.. [#Xu2023Watermarking] J. Xu et al., *Watermarking Graph Neural Networks based on Backdoor Attacks*, EuroS\&P, 2023.
+.. [#Xu2023Watermarking] Xu, J., Koffas, S., Ersoy, O. and Picek, S., 2023. Watermarking Graph Neural Networks based on Backdoor Attacks. In *2023 IEEE European Symposium on Security and Privacy (EuroS\&P 2023)*, pp.1179-1197.
+
