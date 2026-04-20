@@ -24,9 +24,23 @@ Enjoy reading!
 Table of Contents
 -----------------
 
+* `1. Tutorials & Benchmarks <#1-tutorials--benchmarks>`_
 
-----
+  * `1.1. Benchmarks <#11-benchmarks>`_
+  * `1.2. Tutorials <#12-tutorials>`_
 
+* `2. Toolbox & Datasets <#2-toolbox--datasets>`_
+
+* `3. Papers <#3-papers>`_
+
+  * `3.1. Graph Adversarial Attack <#31-graph-adversarial-attack>`_
+  * `3.2. Graph Adversarial Defense <#32-graph-adversarial-defense>`_
+
+* `4. Key Conferences/Workshops/Journals <#4-key-conferencesworkshopsjournals>`_
+
+  * `4.1. Conferences & Workshops <#41-conferences--workshops>`_
+  * `4.2. Journals <#42-journals>`_
+-----------
 
 1. Tutorials & Benchmarks
 ---------------------------------
@@ -38,7 +52,7 @@ Table of Contents
 =============  =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
 Data Types     Paper Title                                                                                        Venue                         Year   Ref                           Materials
 =============  =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
-Graph          GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection                           NeurIPS                       2023   [#Aggarwal2013Outlier]_          `[PDF] <https://arxiv.org/abs/2306.12251>`_, `[Code] <https://github.com/squareRoot3/GADBench>`_
+Graph          Graph Robustness Benchmark: Benchmarking the Adversarial Robustness of Graph Machine Learning      NeurIPS                       2021   [#Zhu2021GRB]_                `[PDF] <https://arxiv.org/pdf/2111.04314>`_, `[Code] <https://cogdl.ai/grb/home>`_
 
 =============  =================================================================================================  ============================  =====  ============================  ==========================================================================================================================================================================
 
@@ -46,12 +60,12 @@ Graph          GADBench: Revisiting and Benchmarking Supervised Graph Anomaly De
 1.2. Tutorials
 ^^^^^^^^^^^^^^
 
-===================================================== ============================================  =====  ============================  ==========================================================================================================================================================================
-Tutorial Title                                        Venue                                         Year   Ref                           Materials
-===================================================== ============================================  =====  ============================  ==========================================================================================================================================================================
-Trustworthy Anomaly Detection                         SDM                                           2024   [#Aggarwal2013Outlier]_       `[HTML] <https://yuan.shuhan.org/talks/SDM24/>`_
+=============================================================================== ============================================  =====  ==============================  ==========================================================================================================================================================================
+Tutorial Title                                                                  Venue                                         Year   Ref                             Materials
+=============================================================================== ============================================  =====  ==============================  ==========================================================================================================================================================================
+Robust Graph Learning on the Web: Challenges, Methods, and Applications         WWW                                           2026   [#Ao2026RobustGraphTutorial]_   `[HTML] <https://qwer12191.github.io/Robust-Graph-Learning-on-Web/>`_
 
-===================================================== ============================================  =====  ============================  ==========================================================================================================================================================================
+=============================================================================== ============================================  =====  ==============================  ==========================================================================================================================================================================
 
 
 
@@ -119,19 +133,6 @@ Learning Strong Graph Neural Networks with Weak Information                     
 ====================================================================================================   ============================  =====  =============================  ============================================================================================================================================================================================================================================================
 
 
-3.3. Others
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-=================================================================================================  ============================  =====  =============================  ==============================================================================================================================================================================================
-Paper Title                                                                                        Venue                         Year   Ref                            Materials
-=================================================================================================  ============================  =====  =============================  ==============================================================================================================================================================================================
-XGBOD: improving supervised outlier detection with unsupervised representation learning            IJCNN                         2018   [#Abe2006Outlier]_              `[PDF] <https://arxiv.org/abs/1912.00290>`_
-
-=================================================================================================  ============================  =====  =============================  ==============================================================================================================================================================================================
-
-
-
-
 
 
 ----
@@ -180,7 +181,9 @@ XGBOD: improving supervised outlier detection with unsupervised representation l
 References
 ----------
 
-.. [#Aggarwal2013Outlier] Aggarwal, C.C., 2013. Outlier ensembles: position paper. *ACM SIGKDD Explorations Newsletter*\ , 14(2), pp.49-58.
+.. [#Zhu2021GRB] Deyu Zhu, Qinkai Zheng, Yang Liu. 2021. Graph Robustness Benchmark: Benchmarking the Adversarial Robustness of Graph Machine Learning. In *Advances in Neural Information Processing Systems (NeurIPS)*.
+
+.. [#Ao2026RobustGraphTutorial] Xiang Ao, Yang Liu, Guansong Pang, Yuanhao Ding, Hezhe Qiao, Dawei Cheng, and Qing He. 2026. Robust Graph Learning on the Web: Challenges, Methods, and Applications. In *Companion Proceedings of the ACM Web Conference (WWW)*.
 
 .. [#Zugner2018Adversarial] Daniel Zügner, Amir Akbarnejad, and Stephan Günnemann. 2018. Adversarial Attacks on Neural Networks for Graph Data. In *Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD)*, 2847–2856. https://doi.org/10.1145/3219819.3220078.
 
@@ -240,4 +243,35 @@ References
 
 .. [#liu2023learning] Yixin Liu, Kaize Ding, Jianling Wang, Vincent Lee, Huan Liu, and Shirui Pan. 2023. Learning Strong Graph Neural Networks with Weak Information. In *Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)*, 1559–1571.
 
-.. [#Abe2006Outlier] Abe, N., Zadrozny, B. and Langford, J., 2006, August. Outlier detection by active learning. In *Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining*, pp. 504-509, ACM.
+.. [#Zhou2023On] Zhou, Z., Zhou, C., Li, X., Yao, J., Yao, Q. and Han, B., 2023. On Strengthening and Defending Graph Reconstruction Attack with Markov Chain Approximation. In *Proceedings of the 40th International Conference on Machine Learning (ICML)*, pp.41803-41833.
+
+.. [#Xu2024OblivGNN] Xu, Z., Lai, S., Liu, X., Abuadbba, A., Yuan, X. and Yi, X., 2024. OblivGNN: Oblivious Inference on Transductive and Inductive Graph Neural Network. In *33rd USENIX Security Symposium (USENIX Security 24)*, pp.2209-2226.
+
+.. [#Lou2025GRID] Lou, J., Yuan, X., Zhang, R., Yuan, X., Gong, N.Z. and Tzeng, N.-F., 2025. GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models. In *2025 IEEE Symposium on Security and Privacy (IEEE S\&P 2025)*, pp.2095-2113.
+
+.. [#Xu2023Watermarking] Xu, J., Koffas, S., Ersoy, O. and Picek, S., 2023. Watermarking Graph Neural Networks based on Backdoor Attacks. In *2023 IEEE European Symposium on Security and Privacy (EuroS\&P 2023)*, pp.1179-1197.
+
+.. [#ding2019deep] Kaize Ding, Jundong Li, Rohit Bhanushali, and Huan Liu. 2019. Deep anomaly detection on attributed networks. In *Proceedings of the 2019 SIAM International Conference on Data Mining (SDM)*, 594–602. https://doi.org/10.1137/1.9781611975673.67.
+
+.. [#niu2023graph] Chaoxi Niu, Guansong Pang, and Ling Chen. 2023. Graph-level anomaly detection via hierarchical memory networks. In *Joint European Conference on Machine Learning and Knowledge Discovery in Databases (ECML PKDD)*, 201–218.
+
+.. [#roy2024gad] Amit Roy, Juan Shu, Jia Li, Carl Yang, Olivier Elshocht, Jeroen Smeets, and Pan Li. 2024. Gad-nr: Graph anomaly detection via neighborhood reconstruction. In *Proceedings of the 17th ACM International Conference on Web Search and Data Mining (WSDM)*, 576–585.
+
+.. [#liu2021anomaly] Yixin Liu, Zhao Li, Shirui Pan, Chen Gong, Chuan Zhou, and George Karypis. 2021. Anomaly detection on attributed networks via contrastive self-supervised learning. *IEEE Transactions on Neural Networks and Learning Systems*, 33(6), 2378–2392.
+
+.. [#wang2021one] Xuhong Wang, Baihong Jin, Ying Du, Ping Cui, Yingshui Tan, and Yupu Yang. 2021. One-class graph neural networks for anomaly detection in attributed networks. *Neurocomputing*, 33, 12073–12085.
+
+.. [#ijcai2019p669] Huijun Wu, Chen Wang, Yuriy Tyshetskiy, Andrew Docherty, Kai Lu, and Liming Zhu. 2019. Adversarial examples on graph data: Deep insights into attack and defense. In *Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence (IJCAI)*, 4816–4823. https://doi.org/10.24963/ijcai.2019/669.
+
+.. [#entezari2020all] Negin Entezari, Saba A. Al-Sayouri, Amirali Darvishzadeh, and Evangelos E. Papalexakis. 2020. All you need is low (rank) defending against adversarial attacks on graphs. In *Proceedings of the 13th ACM International Conference on Web Search and Data Mining (WSDM)*, 169–177.
+
+.. [#jin2020graph] Wei Jin, Yao Ma, Xiaorui Liu, Xianfeng Tang, Suhang Wang, and Jiliang Tang. 2020. Graph structure learning for robust graph neural networks. In *Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)*, 66–74.
+
+.. [#li2022reliable] Kuan Li, Yang Liu, Xiang Ao, Jianfeng Chi, Jinghua Feng, Hao Yang, and Qing He. 2022. Reliable Representations Make A Stronger Defender:Unsupervised Structure Refinement for RobustGNN. In *Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)*, 925–935.
+
+.. [#tu2022initializing] Wenxuan Tu, Sihang Zhou, Xinwang Liu, Yue Liu, Zhiping Cai, En Zhu, Changwang Zhang, and Jieren Cheng. 2022. Initializing Then Refining: A Simple Graph Attribute Imputation Network. In *Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI)*, 3494–3500.
+
+.. [#li2025dilution] Xinxin Li, Yang Liu, Siyong Xu, Weigao Wen, Qing He, and Xiang Ao. 2025. Dilution of Unreliable Information: Learning in Graph with Noisy Structures and Absent Attributes. In *Proceedings of the IEEE International Conference on Data Mining (ICDM)*, 1360–1369.
+
+.. [#liu2023learning] Yixin Liu, Kaize Ding, Jianling Wang, Vincent Lee, Huan Liu, and Shirui Pan. 2023. Learning Strong Graph Neural Networks with Weak Information. In *Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)*, 1559–1571.
+
