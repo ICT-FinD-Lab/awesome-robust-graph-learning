@@ -85,17 +85,17 @@ Robust Graph Learning on the Web: Challenges, Methods, and Applications         
 3.1. Graph Adversarial Attack
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-=====================================================================================  =======  ====  ===========================  ====================================================================================================================================
-Paper Title                                                                            Venue    Year  Ref                          Materials                                                                                                                           
-=====================================================================================  =======  ====  ===========================  ====================================================================================================================================
-Adversarial Attacks on Neural Networks for Graph Data                                  KDD      2018  [#Zugner2018Adversarial]_    `[PDF] <https://arxiv.org/pdf/1805.07984>`_, `[Code] <https://github.com/danielzuegner/nettack>`_                                   
-Indirect Adversarial Attacks via Poisoning Neighbors for Graph Convolutional Networks  BigData  2019  [#Takahashi2019Indirect]_    `[PDF] <https://arxiv.org/pdf/2002.08012>`_, Code: N/A                                                                              
-TDGIA: Effective Injection Attacks on Graph Neural Networks                            KDD      2021  [#Zou2021TDGIA]_             `[PDF] <https://keg.cs.tsinghua.edu.cn/jietang/publications/KDD21-Zou-et-al-TDGIA.pdf>`_, `[Code] <https://github.com/THUDM/tdgia>`_
-Adversarial Attacks on Graph Neural Networks via Meta Learning                         ICLR     2019  [#Zugner2019Adversarial]_    `[PDF] <https://openreview.net/pdf?id=Bylnx209YX>`_, `[Code] <https://github.com/danielzuegner/gnn-meta-attack>`_                   
-Backdoor Attacks to Graph Neural Networks                                              SACMAT   2021  [#Zhang2021Backdoor]_        `[PDF] <https://arxiv.org/pdf/2006.11165>`_, `[Code] <https://github.com/zaixizhang/graphbackdoor>`_                                
-Unnoticeable Backdoor Attacks on Graph Neural Networks                                 WWW      2023  [#Dai2023Unnoticeable]_      `[PDF] <https://arxiv.org/pdf/2303.01263>`_, `[Code] <https://github.com/ventr1c/UGBA>`_                                            
-SPEAR: A Structure-Preserving Manipulation Method for Graph Backdoor Attacks           WWW      2025  [#Ding2025SPEAR]_            `[PDF] <https://ponderly.github.io/pub/SPEAR_WWW2025.pdf>`_, `[Code] <https://github.com/yhDing/SPEAR>`_                            
-=====================================================================================  =======  ====  ===========================  ====================================================================================================================================
+===============================  =====================================================================================  =======  ====  ===========================  ====================================================================================================================================
+Category                         Paper Title                                                                            Venue    Year  Ref                          Materials
+===============================  =====================================================================================  =======  ====  ===========================  ====================================================================================================================================
+Evasion Attack                   Adversarial Attacks on Neural Networks for Graph Data                                  KDD      2018  [#Zugner2018Adversarial]_    `[PDF] <https://arxiv.org/pdf/1805.07984>`_, `[Code] <https://github.com/danielzuegner/nettack>`_
+Evasion Attack                   Indirect Adversarial Attacks via Poisoning Neighbors for Graph Convolutional Networks  BigData  2019  [#Takahashi2019Indirect]_    `[PDF] <https://arxiv.org/pdf/2002.08012>`_, Code: N/A
+Evasion Attack                   TDGIA: Effective Injection Attacks on Graph Neural Networks                            KDD      2021  [#Zou2021TDGIA]_             `[PDF] <https://keg.cs.tsinghua.edu.cn/jietang/publications/KDD21-Zou-et-al-TDGIA.pdf>`_, `[Code] <https://github.com/THUDM/tdgia>`_
+Poisoning Attack                 Adversarial Attacks on Graph Neural Networks via Meta Learning                         ICLR     2019  [#Zugner2019Adversarial]_    `[PDF] <https://openreview.net/pdf?id=Bylnx209YX>`_, `[Code] <https://github.com/danielzuegner/gnn-meta-attack>`_
+Poisoning Attack (Backdoor)      Backdoor Attacks to Graph Neural Networks                                              SACMAT   2021  [#Zhang2021Backdoor]_        `[PDF] <https://arxiv.org/pdf/2006.11165>`_, `[Code] <https://github.com/zaixizhang/graphbackdoor>`_
+Poisoning Attack (Backdoor)      Unnoticeable Backdoor Attacks on Graph Neural Networks                                 WWW      2023  [#Dai2023Unnoticeable]_      `[PDF] <https://arxiv.org/pdf/2303.01263>`_, `[Code] <https://github.com/ventr1c/UGBA>`_
+Poisoning Attack (Backdoor)      SPEAR: A Structure-Preserving Manipulation Method for Graph Backdoor Attacks           WWW      2025  [#Ding2025SPEAR]_            `[PDF] <https://ponderly.github.io/pub/SPEAR_WWW2025.pdf>`_, `[Code] <https://github.com/yhDing/SPEAR>`_
+===============================  =====================================================================================  =======  ====  ===========================  ====================================================================================================================================
 .. note:: For PoisonProbe, I did not find a public official code repository during verification, so the code field is marked as ``N/A``.
 
 
@@ -242,3 +242,4 @@ References
 .. [#li2025dilution] Xinxin Li, Yang Liu, Siyong Xu, Weigao Wen, Qing He, and Xiang Ao. 2025. Dilution of Unreliable Information: Learning in Graph with Noisy Structures and Absent Attributes. In *Proceedings of the IEEE International Conference on Data Mining (ICDM)*, 1360–1369.
 
 .. [#liu2023learning] Yixin Liu, Kaize Ding, Jianling Wang, Vincent Lee, Huan Liu, and Shirui Pan. 2023. Learning Strong Graph Neural Networks with Weak Information. In *Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)*, 1559–1571.
+
