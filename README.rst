@@ -73,11 +73,12 @@ Adaptive-attack Audit   Are Defenses for Graph Neural Networks Robust?          
 1.2. Tutorials
 ^^^^^^^^^^^^^^
 
-=======================================================================  =====  ====  =============================  =====================================================================
-Tutorial Title                                                           Venue  Year  Ref                            Materials
-=======================================================================  =====  ====  =============================  =====================================================================
-Robust Graph Learning on the Web: Challenges, Methods, and Applications  WWW    2026  [#Ao2026RobustGraphTutorial]_  `[HTML] <https://qwer12191.github.io/Robust-Graph-Learning-on-Web/>`_
-=======================================================================  =====  ====  =============================  =====================================================================
+=======================================================================  =====  ====  ===============================  ===========================================================================================================
+Tutorial Title                                                           Venue  Year  Ref                              Materials
+=======================================================================  =====  ====  ===============================  ===========================================================================================================
+Robust Graph Learning in Finance                                         ICAIF  2025  [#Ao2025RobustFinanceTutorial]_  `[HTML] <https://qwer12191.github.io/robust-graph-learning/>`_, `[ICAIF] <https://icaif25.org/tutorials/>`_
+Robust Graph Learning on the Web: Challenges, Methods, and Applications  WWW    2026  [#Ao2026RobustGraphTutorial]_    `[HTML] <https://qwer12191.github.io/Robust-Graph-Learning-on-Web/>`_
+=======================================================================  =====  ====  ===============================  ===========================================================================================================
 
 ----
 
@@ -234,7 +235,7 @@ Augmentation (Rationale)     Graph Rationalization with Environment-based Augmen
 Environment Inference        Learning Substructure Invariance for Out-of-Distribution Molecular Representations            NeurIPS     2022  [#Yang2022Learning]_          `[OpenReview] <https://openreview.net/forum?id=2nWUNTnFijm>`_, `[Code] <https://github.com/yangnianzu0515/MoleOOD>`_
 Size Shift                   SizeShiftReg: A Regularization Method for Improving Size-Generalization in GNNs               NeurIPS     2022  [#Buffelli2022SizeShiftReg]_  `[PDF] <https://arxiv.org/pdf/2207.07888>`_, `[Code] <https://github.com/DavideBuffelli/SizeShiftReg>`_
 Test-Time Adaptation         Empowering Graph Representation Learning with Test-Time Graph Transformation                  ICLR        2023  [#Jin2023Empowering]_         `[PDF] <https://arxiv.org/pdf/2210.03561>`_, `[Code] <https://github.com/ChandlerBang/GTrans>`_
-Causal Stable Learning       Generalizing Graph Neural Networks on Out-of-Distribution Graphs                              IEEE TPAMI  2023  [#Fan2023Generalizing]_       `[PDF] <https://arxiv.org/pdf/2111.10657>`_
+Causal Stable Learning       Generalizing Graph Neural Networks on Out-of-Distribution Graphs                              IEEE TPAMI  2024  [#Fan2023Generalizing]_       `[PDF] <https://arxiv.org/pdf/2111.10657>`_
 Causal Independence          Joint Learning of Label and Environment Causal Independence for Graph OOD Generalization      NeurIPS     2023  [#Gui2023Joint]_              `[PDF] <https://arxiv.org/pdf/2306.01103>`_, `[Code] <https://github.com/divelab/LECI>`_
 Invariant Learning (Theory)  Does Invariant Graph Learning via Environment Augmentation Learn Invariance?                  NeurIPS     2023  [#Chen2023Does]_              `[PDF] <https://arxiv.org/pdf/2310.19035>`_, `[Code] <https://github.com/LFhase/GALA>`_
 Causal Intervention          Graph Out-of-Distribution Generalization via Causal Intervention                              WWW         2024  [#Wu2024Graph]_               `[PDF] <https://arxiv.org/pdf/2402.11494>`_, `[Code] <https://github.com/fannie1208/CaNet>`_
@@ -249,7 +250,7 @@ Broadly **model-level** protection of trained GNN systems: privacy-preserving tr
 Paper Title                                                                                 Venue            Year  Ref                         Materials
 ==========================================================================================  ===============  ====  ==========================  ====================================================================================================================================
 Locally Private Graph Neural Networks                                                       ACM CCS          2021  [#Sajadmanesh2021Locally]_  `[PDF] <https://arxiv.org/pdf/2006.05535>`_, `[Code] <https://github.com/sisaman/LPGNN>`_
-NetFense: Adversarial Defenses against Privacy Attacks on Neural Networks for Graph Data    IEEE TKDE        2023  [#Hsieh2023NetFense]_       `[PDF] <https://www.computer.org/csdl/journal/tk/2023/01/09448513/1ugDQeDTD3O>`_, `[Code] <https://github.com/ICHproject/NetFense>`_
+NetFense: Adversarial Defenses Against Privacy Attacks on Neural Networks for Graph Data    IEEE TKDE        2023  [#Hsieh2023NetFense]_       `[PDF] <https://www.computer.org/csdl/journal/tk/2023/01/09448513/1ugDQeDTD3O>`_, `[Code] <https://github.com/ICHproject/NetFense>`_
 Releasing Graph Neural Networks with Differential Privacy Guarantees                        TMLR             2023  [#Olatunji2023Releasing]_   `[PDF] <https://arxiv.org/pdf/2109.08907>`_
 GAP: Differentially Private Graph Neural Networks with Aggregation Perturbation             USENIX Security  2023  [#Sajadmanesh2023GAP]_      `[PDF] <https://www.usenix.org/system/files/sec23fall-prepub-196-sajadmanesh.pdf>`_, `[Code] <https://github.com/sisaman/GAP>`_
 SecGNN: Privacy-Preserving Graph Neural Network Training and Inference as a Cloud Service   IEEE TSC         2023  [#Wang2023SecGNN]_          `[Paper] <https://www.computer.org/csdl/journal/sc/2023/04/10035510/1Krc3O7eDkc>`_
@@ -329,6 +330,7 @@ References
 .. [#Zhou2023OpenGSL] Zhiyao Zhou, Sheng Zhou, Bochao Mao, Xuanyi Zhou, Jiawei Chen, Qiaoyu Tan, Daochen Zha, Yan Feng, Chun Chen, and Can Wang. 2023. OpenGSL: A Comprehensive Benchmark for Graph Structure Learning. In *Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track*.
 .. [#Hu2020OGB] Weihua Hu, Matthias Fey, Marinka Zitnik, Yuxiao Dong, Hongyu Ren, Bowen Liu, Michele Catasta, and Jure Leskovec. 2020. Open Graph Benchmark: Datasets for Machine Learning on Graphs. In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Mujkanovic2022Are] Felix Mujkanovic, Simon Geisler, Stephan Gunnemann, and Aleksandar Bojchevski. 2022. Are Defenses for Graph Neural Networks Robust? In *Advances in Neural Information Processing Systems (NeurIPS)*.
+.. [#Ao2025RobustFinanceTutorial] Xiang Ao, Yang Liu, Guansong Pang, Yuanhao Ding, Hezhe Qiao, Dawei Cheng, and Qing He. 2025. Robust Graph Learning in Finance. In *Proceedings of the 6th ACM International Conference on AI in Finance (ICAIF)*.
 .. [#Ao2026RobustGraphTutorial] Xiang Ao, Yang Liu, Guansong Pang, Yuanhao Ding, Hezhe Qiao, Dawei Cheng, and Qing He. 2026. Robust Graph Learning on the Web: Challenges, Methods, and Applications. In *Companion Proceedings of the ACM Web Conference (WWW)*.
 .. [#Dai2018Adversarial] Hanjun Dai, Hui Li, Tian Tian, Xin Huang, Lin Wang, Jun Zhu, and Le Song. 2018. Adversarial Attack on Graph Structured Data. In *Proceedings of the 35th International Conference on Machine Learning (ICML)*, 1115-1124.
 .. [#Zugner2018Adversarial] Daniel Zugner, Amir Akbarnejad, and Stephan Gunnemann. 2018. Adversarial Attacks on Neural Networks for Graph Data. In *Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD)*, 2847-2856. https://doi.org/10.1145/3219819.3220078.
@@ -396,12 +398,12 @@ References
 .. [#Yang2022Learning] Nianzu Yang, Kaipeng Zeng, Qitian Wu, Xiaosong Jia, and Junchi Yan. 2022. Learning Substructure Invariance for Out-of-Distribution Molecular Representations. In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Buffelli2022SizeShiftReg] Davide Buffelli, Pietro Lio, and Fabio Vandin. 2022. SizeShiftReg: A Regularization Method for Improving Size-Generalization in Graph Neural Networks. In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Jin2023Empowering] Wei Jin, Tong Zhao, Jiayuan Ding, Yozen Liu, Jiliang Tang, and Neil Shah. 2023. Empowering Graph Representation Learning with Test-Time Graph Transformation. In *International Conference on Learning Representations (ICLR)*.
-.. [#Fan2023Generalizing] Shaohua Fan, Xiao Wang, Chuan Shi, Peng Cui, and Bai Wang. 2023. Generalizing Graph Neural Networks on Out-of-Distribution Graphs. *IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)*.
+.. [#Fan2023Generalizing] Shaohua Fan, Xiao Wang, Chuan Shi, Peng Cui, and Bai Wang. 2024. Generalizing Graph Neural Networks on Out-of-Distribution Graphs. *IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)*, 46(1), 322-337.
 .. [#Gui2023Joint] Shurui Gui, Meng Liu, Xiner Li, Youzhi Luo, and Shuiwang Ji. 2023. Joint Learning of Label and Environment Causal Independence for Graph Out-of-Distribution Generalization. In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Chen2023Does] Yongqiang Chen, Yatao Bian, Kaiwen Zhou, Binghui Xie, Bo Han, and James Cheng. 2023. Does Invariant Graph Learning via Environment Augmentation Learn Invariance? In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Wu2024Graph] Qitian Wu, Fan Nie, Chenxiao Yang, Tianyi Bao, and Junchi Yan. 2024. Graph Out-of-Distribution Generalization via Causal Intervention. In *Proceedings of the ACM Web Conference 2024 (WWW)*, 850-860.
 .. [#Sajadmanesh2021Locally] Sina Sajadmanesh and Daniel Gatica-Perez. 2021. Locally Private Graph Neural Networks. In *Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security (CCS)*, 2130-2145.
-.. [#Hsieh2023NetFense] I-Chung Hsieh and Cheng-Te Li. 2023. NetFense: Adversarial Defenses against Privacy Attacks on Neural Networks for Graph Data. *IEEE Transactions on Knowledge and Data Engineering (TKDE)*, 35(1), 796-809.
+.. [#Hsieh2023NetFense] I-Chung Hsieh and Cheng-Te Li. 2023. NetFense: Adversarial Defenses Against Privacy Attacks on Neural Networks for Graph Data. *IEEE Transactions on Knowledge and Data Engineering (TKDE)*, 35(1), 796-809.
 .. [#Olatunji2023Releasing] Iyiola E. Olatunji, Thorben Funke, and Megha Khosla. 2023. Releasing Graph Neural Networks with Differential Privacy Guarantees. *Transactions on Machine Learning Research (TMLR)*.
 .. [#Sajadmanesh2023GAP] Sina Sajadmanesh, Ali Shahin Shamsabadi, Aurelien Bellet, and Daniel Gatica-Perez. 2023. GAP: Differentially Private Graph Neural Networks with Aggregation Perturbation. In *32nd USENIX Security Symposium (USENIX Security 23)*, 3223-3240.
 .. [#Wang2023SecGNN] Songlei Wang, Yifeng Zheng, and Xiaohua Jia. 2023. SecGNN: Privacy-Preserving Graph Neural Network Training and Inference as a Cloud Service. *IEEE Transactions on Services Computing (TSC)*, 16(4), 2923-2938.
