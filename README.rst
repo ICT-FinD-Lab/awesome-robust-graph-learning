@@ -41,7 +41,6 @@ Table of Contents
   * `3.3. Graph Structure Learning & Learning under Noisy/Weak Information <#33-graph-structure-learning--learning-under-noisyweak-information>`_
   * `3.4. Graph Anomaly Detection <#34-graph-anomaly-detection>`_
   * `3.5. Graph Out-of-Distribution Generalization <#35-graph-out-of-distribution-generalization>`_
-  * `3.6. Privacy & IP Protection for GNNs <#36-privacy--ip-protection-for-gnns>`_
 
 * `4. Key Conferences/Workshops/Journals <#4-key-conferencesworkshopsjournals>`_
 
@@ -133,6 +132,7 @@ Category                 Paper Title                                            
 =======================  ============================================================================================  ===============  ====  =========================  ====================================================================================================================================
 Evasion Attack           Adversarial Attack on Graph Structured Data                                                   ICML             2018  [#Dai2018Adversarial]_     `[PDF] <https://arxiv.org/pdf/1806.02371>`_, `[Code] <https://github.com/Hanjun-Dai/graph_adversarial_attack>`_
 Evasion Attack           Adversarial Attacks on Neural Networks for Graph Data                                         KDD              2018  [#Zugner2018Adversarial]_  `[PDF] <https://arxiv.org/pdf/1805.07984>`_, `[Code] <https://github.com/danielzuegner/nettack>`_
+Evasion Attack           Indirect Adversarial Attacks via Poisoning Neighbors for Graph Convolutional Networks         BigData          2019  [#Takahashi2019Indirect]_  `[PDF] <https://arxiv.org/pdf/2002.08012>`_, Code: N/A
 Evasion / Poisoning      Topology Attack and Defense for Graph Neural Networks: An Optimization Perspective            IJCAI            2019  [#Xu2019Topology]_         `[PDF] <https://arxiv.org/pdf/1906.04214>`_, `[Code] <https://github.com/KaidiXu/GCN_ADV_Train>`_
 Evasion (Black-box)      A Restricted Black-box Adversarial Framework Towards Attacking Graph Embedding Models         AAAI             2020  [#Chang2020Restricted]_    `[PDF] <https://arxiv.org/pdf/1908.01297>`_, `[Code] <https://github.com/SwiftieH/GFAttack>`_
 Evasion (Universal)      Graph Universal Adversarial Attacks: A Few Bad Actors Ruin Graph Learning Models              IJCAI            2021  [#Zang2021Graph]_          `[PDF] <https://arxiv.org/pdf/2002.04784>`_, `[Code] <https://github.com/chisam0217/Graph-Universal-Attack>`_
@@ -143,6 +143,7 @@ Injection Attack         Single Node Injection Attack against Graph Neural Netwo
 Injection Attack         Understanding and Improving Graph Injection Attack by Promoting Unnoticeability               ICLR             2022  [#Chen2022Understanding]_  `[PDF] <https://arxiv.org/pdf/2202.08057>`_, `[Code] <https://github.com/LFhase/GIA-HAO>`_
 Injection (Query-based)  Cluster Attack: Query-based Adversarial Attacks on Graphs with Graph-Dependent Priors         IJCAI            2022  [#Wang2022Cluster]_        `[PDF] <https://arxiv.org/pdf/2109.13069>`_, `[Code] <https://github.com/thuwzy/Cluster-Attack>`_
 Backdoor Attack          Graph Backdoor                                                                                USENIX Security  2021  [#Xi2021Graph]_            `[PDF] <https://arxiv.org/pdf/2006.11890>`_, `[Code] <https://github.com/zhaohan-xi/GraphBackdoor>`_
+Backdoor Attack          Backdoor Attacks to Graph Neural Networks                                                     SACMAT           2021  [#Zhang2021Backdoor]_      `[PDF] <https://arxiv.org/pdf/2006.11165>`_, `[Code] <https://github.com/zaixizhang/graphbackdoor>`_
 Backdoor Attack          Unnoticeable Backdoor Attacks on Graph Neural Networks                                        WWW              2023  [#Dai2023Unnoticeable]_    `[PDF] <https://arxiv.org/pdf/2303.01263>`_, `[Code] <https://github.com/ventr1c/UGBA>`_
 Backdoor Attack          SPEAR: A Structure-Preserving Manipulation Method for Graph Backdoor Attacks                  WWW              2025  [#Ding2025SPEAR]_          `[PDF] <https://ponderly.github.io/pub/SPEAR_WWW2025.pdf>`_, `[Code] <https://github.com/yhDing/SPEAR>`_
 =======================  ============================================================================================  ===============  ====  =========================  ====================================================================================================================================
@@ -197,21 +198,23 @@ Noisy Structure + Missing Attr.  Dilution of Unreliable Information: Learning in
 3.4. Graph Anomaly Detection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-============================  =========================================================================================  ==========  ====  =======================  ====================================================================================================================
-Category                      Paper Title                                                                                Venue       Year  Ref                      Materials
-============================  =========================================================================================  ==========  ====  =======================  ====================================================================================================================
-Reconstruction                Deep Anomaly Detection on Attributed Networks                                              SDM         2019  [#ding2019deep]_         `[Paper] <https://epubs.siam.org/doi/abs/10.1137/1.9781611975673.67>`_
-Fraud Detection               Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters        CIKM        2020  [#Dou2020Enhancing]_     `[PDF] <https://arxiv.org/pdf/2008.08692>`_, `[Code] <https://github.com/YingtongDou/CARE-GNN>`_
-Contrastive (Unsupervised)    Anomaly Detection on Attributed Networks via Contrastive Self-Supervised Learning          IEEE TNNLS  2022  [#liu2021anomaly]_       `[PDF] <https://arxiv.org/pdf/2103.00113>`_
-Fraud (Imbalance)             Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection              WWW         2021  [#Liu2021Pick]_          `[PDF] <https://ponderly.github.io/pub/PCGNN_WWW2021.pdf>`_, `[Code] <https://github.com/PonderLY/PC-GNN>`_
-Contrastive (Multi-scale)     ANEMONE: Graph Anomaly Detection with Multi-Scale Contrastive Learning                     CIKM        2021  [#Jin2021ANEMONE]_       `[Paper] <https://dl.acm.org/doi/10.1145/3459637.3482057>`_, `[Code] <https://github.com/TrustAGI-Lab/ANEMONE>`_
-Generative + Contrastive      Generative and Contrastive Self-Supervised Learning for Graph Anomaly Detection            IEEE TKDE   2021  [#Zheng2021Generative]_  `[PDF] <https://arxiv.org/pdf/2108.09896>`_, `[Code] <https://github.com/KimMeen/SL-GAD>`_
-Spectral (Supervised)         Rethinking Graph Neural Networks for Anomaly Detection                                     ICML        2022  [#Tang2022Rethinking]_   `[PDF] <https://arxiv.org/pdf/2205.15508>`_, `[Code] <https://github.com/squareRoot3/Rethinking-Anomaly-Detection>`_
-Heterophily-aware             Addressing Heterophily in Graph Anomaly Detection: A Perspective of Graph Spectrum         WWW         2023  [#Gao2023Addressing]_    `[PDF] <https://blacksingular.github.io/papers/www23-GHRN.pdf>`_, `[Code] <https://github.com/blacksingular/GHRN>`_
-One-class Homophily           Truncated Affinity Maximization: One-class Homophily Modeling for Graph Anomaly Detection  NeurIPS     2023  [#Qiao2023Truncated]_    `[PDF] <https://arxiv.org/pdf/2306.00006>`_, `[Code] <https://github.com/mala-lab/TAM-master>`_
-Reconstruction                GAD-NR: Graph Anomaly Detection via Neighborhood Reconstruction                            WSDM        2024  [#roy2024gad]_           `[PDF] <https://dl.acm.org/doi/pdf/10.1145/3616855.3635767>`_, `[Code] <https://github.com/graph-com/GAD-NR>`_
-Semi-supervised (Generative)  Generative Semi-supervised Graph Anomaly Detection                                         NeurIPS     2024  [#Qiao2024Generative]_   `[PDF] <https://arxiv.org/pdf/2402.11887>`_, `[Code] <https://github.com/mala-lab/GGAD>`_
-============================  =========================================================================================  ==========  ====  =======================  ====================================================================================================================
+============================  =========================================================================================  ====================  ====  =======================  ====================================================================================================================
+Category                      Paper Title                                                                                Venue                 Year  Ref                      Materials
+============================  =========================================================================================  ====================  ====  =======================  ====================================================================================================================
+Reconstruction                Deep Anomaly Detection on Attributed Networks                                              SDM                   2019  [#ding2019deep]_         `[Paper] <https://epubs.siam.org/doi/abs/10.1137/1.9781611975673.67>`_
+Fraud Detection               Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters        CIKM                  2020  [#Dou2020Enhancing]_     `[PDF] <https://arxiv.org/pdf/2008.08692>`_, `[Code] <https://github.com/YingtongDou/CARE-GNN>`_
+Contrastive (Unsupervised)    Anomaly Detection on Attributed Networks via Contrastive Self-Supervised Learning          IEEE TNNLS            2022  [#liu2021anomaly]_       `[PDF] <https://arxiv.org/pdf/2103.00113>`_
+One-class                     One-class Graph Neural Networks for Anomaly Detection in Attributed Networks               Neural Comput. Appl.  2021  [#wang2021one]_          `[PDF] <https://arxiv.org/pdf/2002.09594>`_, `[Code] <https://github.com/WangXuhongCN/OCGNN>`_
+Fraud (Imbalance)             Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection              WWW                   2021  [#Liu2021Pick]_          `[PDF] <https://ponderly.github.io/pub/PCGNN_WWW2021.pdf>`_, `[Code] <https://github.com/PonderLY/PC-GNN>`_
+Contrastive (Multi-scale)     ANEMONE: Graph Anomaly Detection with Multi-Scale Contrastive Learning                     CIKM                  2021  [#Jin2021ANEMONE]_       `[Paper] <https://dl.acm.org/doi/10.1145/3459637.3482057>`_, `[Code] <https://github.com/TrustAGI-Lab/ANEMONE>`_
+Generative + Contrastive      Generative and Contrastive Self-Supervised Learning for Graph Anomaly Detection            IEEE TKDE             2021  [#Zheng2021Generative]_  `[PDF] <https://arxiv.org/pdf/2108.09896>`_, `[Code] <https://github.com/KimMeen/SL-GAD>`_
+Spectral (Supervised)         Rethinking Graph Neural Networks for Anomaly Detection                                     ICML                  2022  [#Tang2022Rethinking]_   `[PDF] <https://arxiv.org/pdf/2205.15508>`_, `[Code] <https://github.com/squareRoot3/Rethinking-Anomaly-Detection>`_
+Heterophily-aware             Addressing Heterophily in Graph Anomaly Detection: A Perspective of Graph Spectrum         WWW                   2023  [#Gao2023Addressing]_    `[PDF] <https://blacksingular.github.io/papers/www23-GHRN.pdf>`_, `[Code] <https://github.com/blacksingular/GHRN>`_
+One-class Homophily           Truncated Affinity Maximization: One-class Homophily Modeling for Graph Anomaly Detection  NeurIPS               2023  [#Qiao2023Truncated]_    `[PDF] <https://arxiv.org/pdf/2306.00006>`_, `[Code] <https://github.com/mala-lab/TAM-master>`_
+Graph-level                   Graph-level Anomaly Detection via Hierarchical Memory Networks                             ECML PKDD             2023  [#niu2023graph]_         `[PDF] <https://arxiv.org/pdf/2307.00755>`_, `[Code] <https://github.com/Niuchx/HimNet>`_
+Reconstruction                GAD-NR: Graph Anomaly Detection via Neighborhood Reconstruction                            WSDM                  2024  [#roy2024gad]_           `[PDF] <https://dl.acm.org/doi/pdf/10.1145/3616855.3635767>`_, `[Code] <https://github.com/graph-com/GAD-NR>`_
+Semi-supervised (Generative)  Generative Semi-supervised Graph Anomaly Detection                                         NeurIPS               2024  [#Qiao2024Generative]_   `[PDF] <https://arxiv.org/pdf/2402.11887>`_, `[Code] <https://github.com/mala-lab/GGAD>`_
+============================  =========================================================================================  ====================  ====  =======================  ====================================================================================================================
 
 3.5. Graph Out-of-Distribution Generalization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -221,7 +224,6 @@ Methods for generalizing GNNs under distribution shift: invariant / causal learn
 ===========================  ============================================================================================  ==========  ====  ============================  ====================================================================================================================
 Category                     Paper Title                                                                                   Venue       Year  Ref                           Materials
 ===========================  ============================================================================================  ==========  ====  ============================  ====================================================================================================================
-Survey                       Out-Of-Distribution Generalization on Graphs: A Survey                                        arXiv       2022  [#Li2022OOD]_                 `[PDF] <https://arxiv.org/pdf/2202.07987>`_
 Size Shift                   From Local Structures to Size Generalization in Graph Neural Networks                         ICML        2021  [#Yehudai2021From]_           `[PDF] <https://arxiv.org/pdf/2010.08853>`_
 Shift-Robust Training        Shift-Robust GNNs: Overcoming the Limitations of Localized Graph Training Data                NeurIPS     2021  [#Zhu2021Shift]_              `[PDF] <https://arxiv.org/pdf/2108.01099>`_, `[Code] <https://github.com/GentleZhu/Shift-Robust-GNNs>`_
 Invariant Learning           Handling Distribution Shifts on Graphs: An Invariance Perspective                             ICLR        2022  [#Wu2022Handling]_            `[PDF] <https://arxiv.org/pdf/2202.02466>`_, `[Code] <https://github.com/qitianwu/GraphOOD-EERM>`_
@@ -236,22 +238,6 @@ Causal Independence          Joint Learning of Label and Environment Causal Inde
 Invariant Learning (Theory)  Does Invariant Graph Learning via Environment Augmentation Learn Invariance?                  NeurIPS     2023  [#Chen2023Does]_              `[PDF] <https://arxiv.org/pdf/2310.19035>`_, `[Code] <https://github.com/LFhase/GALA>`_
 Causal Intervention          Graph Out-of-Distribution Generalization via Causal Intervention                              WWW         2024  [#Wu2024Graph]_               `[PDF] <https://arxiv.org/pdf/2402.11494>`_, `[Code] <https://github.com/fannie1208/CaNet>`_
 ===========================  ============================================================================================  ==========  ====  ============================  ====================================================================================================================
-
-3.6. Privacy & IP Protection for GNNs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Broadly **model-level** protection of trained GNN systems: privacy-preserving training/inference, graph reconstruction / link-stealing defense, and training-graph protection.
-
-==========================================================================================  ===============  ====  ==========================  ====================================================================================================================================
-Paper Title                                                                                 Venue            Year  Ref                         Materials
-==========================================================================================  ===============  ====  ==========================  ====================================================================================================================================
-Locally Private Graph Neural Networks                                                       ACM CCS          2021  [#Sajadmanesh2021Locally]_  `[PDF] <https://arxiv.org/pdf/2006.05535>`_, `[Code] <https://github.com/sisaman/LPGNN>`_
-NetFense: Adversarial Defenses Against Privacy Attacks on Neural Networks for Graph Data    IEEE TKDE        2023  [#Hsieh2023NetFense]_       `[PDF] <https://www.computer.org/csdl/journal/tk/2023/01/09448513/1ugDQeDTD3O>`_, `[Code] <https://github.com/ICHproject/NetFense>`_
-GAP: Differentially Private Graph Neural Networks with Aggregation Perturbation             USENIX Security  2023  [#Sajadmanesh2023GAP]_      `[PDF] <https://www.usenix.org/system/files/sec23fall-prepub-196-sajadmanesh.pdf>`_, `[Code] <https://github.com/sisaman/GAP>`_
-On Strengthening and Defending Graph Reconstruction Attack with Markov Chain Approximation  ICML             2023  [#Zhou2023On]_              `[PDF] <https://proceedings.mlr.press/v202/zhou23s/zhou23s.pdf>`_, `[Code] <https://github.com/AndrewZhou924/MC-GRA>`_
-OblivGNN: Oblivious Inference on Transductive and Inductive Graph Neural Network            USENIX Security  2024  [#Xu2024OblivGNN]_          `[PDF] <https://www.usenix.org/system/files/usenixsecurity24-xu-zhibo.pdf>`_
-GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models                    IEEE S&P         2025  [#Lou2025GRID]_             `[Paper] <https://www.computer.org/csdl/proceedings-article/sp/2025/223600a059/21B7R5azVuM>`_
-==========================================================================================  ===============  ====  ==========================  ====================================================================================================================================
 
 ----
 
@@ -289,8 +275,6 @@ GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models        
 
 `USENIX Security Symposium <https://www.usenix.org/conferences/byname/108>`_
 
-`IEEE Symposium on Security and Privacy (S&P) <https://www.ieee-security.org/TC/SP-Index.html>`_
-
 4.2. Journals
 ^^^^^^^^^^^^^
 
@@ -325,6 +309,7 @@ References
 .. [#Dai2018Adversarial] Hanjun Dai, Hui Li, Tian Tian, Xin Huang, Lin Wang, Jun Zhu, and Le Song. 2018. Adversarial Attack on Graph Structured Data. In *Proceedings of the 35th International Conference on Machine Learning (ICML)*, 1115-1124.
 .. [#Zugner2018Adversarial] Daniel Zugner, Amir Akbarnejad, and Stephan Gunnemann. 2018. Adversarial Attacks on Neural Networks for Graph Data. In *Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD)*, 2847-2856. https://doi.org/10.1145/3219819.3220078.
 .. [#Xu2019Topology] Kaidi Xu, Hongge Chen, Sijia Liu, Pin-Yu Chen, Tsui-Wei Weng, Mingyi Hong, and Xue Lin. 2019. Topology Attack and Defense for Graph Neural Networks: An Optimization Perspective. In *Proceedings of the 28th International Joint Conference on Artificial Intelligence (IJCAI)*, 3961-3967.
+.. [#Takahashi2019Indirect] Tsubasa Takahashi. 2019. Indirect Adversarial Attacks via Poisoning Neighbors for Graph Convolutional Networks. In *2019 IEEE International Conference on Big Data (Big Data)*, 1395-1400.
 .. [#Chang2020Restricted] Heng Chang, Yu Rong, Tingyang Xu, Wenbing Huang, Honglei Zhang, Peng Cui, Wenwu Zhu, and Junzhou Huang. 2020. A Restricted Black-box Adversarial Framework Towards Attacking Graph Embedding Models. In *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)*, 3389-3396.
 .. [#Zang2021Graph] Xiao Zang, Yi Xie, Jie Chen, and Bo Yuan. 2021. Graph Universal Adversarial Attacks: A Few Bad Actors Ruin Graph Learning Models. In *Proceedings of the 30th International Joint Conference on Artificial Intelligence (IJCAI)*, 3328-3334.
 .. [#Zugner2019Adversarial] Daniel Zugner and Stephan Gunnemann. 2019. Adversarial Attacks on Graph Neural Networks via Meta Learning. In *International Conference on Learning Representations (ICLR)*.
@@ -334,6 +319,7 @@ References
 .. [#Chen2022Understanding] Yongqiang Chen, Han Yang, Yonggang Zhang, Kaili Ma, Tongliang Liu, Bo Han, and James Cheng. 2022. Understanding and Improving Graph Injection Attack by Promoting Unnoticeability. In *International Conference on Learning Representations (ICLR)*.
 .. [#Wang2022Cluster] Zhengyi Wang, Zhongkai Hao, Ziqiao Wang, Hang Su, and Jun Zhu. 2022. Cluster Attack: Query-based Adversarial Attacks on Graphs with Graph-Dependent Priors. In *Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI)*, 768-775.
 .. [#Xi2021Graph] Zhaohan Xi, Ren Pang, Shouling Ji, and Ting Wang. 2021. Graph Backdoor. In *30th USENIX Security Symposium (USENIX Security 21)*, 1523-1540.
+.. [#Zhang2021Backdoor] Zaixi Zhang, Jinyuan Jia, Binghui Wang, and Neil Zhenqiang Gong. 2021. Backdoor Attacks to Graph Neural Networks. In *Proceedings of the 26th ACM Symposium on Access Control Models and Technologies (SACMAT)*, 15-26. https://doi.org/10.1145/3450569.3463560.
 .. [#Dai2023Unnoticeable] Enyan Dai, Minhua Lin, Xiang Zhang, and Suhang Wang. 2023. Unnoticeable Backdoor Attacks on Graph Neural Networks. In *Proceedings of the ACM Web Conference 2023 (WWW)*, 2263-2273. https://doi.org/10.1145/3543507.3583392.
 .. [#Ding2025SPEAR] Yuanhao Ding, Yang Liu, Yugang Ji, Weigao Wen, Qing He, and Xiang Ao. 2025. SPEAR: A Structure-Preserving Manipulation Method for Graph Backdoor Attacks. In *Proceedings of the ACM Web Conference 2025 (WWW)*, 1237-1247. https://doi.org/10.1145/3696410.3714665.
 .. [#ijcai2019p669] Huijun Wu, Chen Wang, Yuriy Tyshetskiy, Andrew Docherty, Kai Lu, and Liming Zhu. 2019. Adversarial Examples for Graph Data: Deep Insights into Attack and Defense. In *Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence (IJCAI)*, 4816-4823. https://doi.org/10.24963/ijcai.2019/669.
@@ -366,15 +352,16 @@ References
 .. [#ding2019deep] Kaize Ding, Jundong Li, Rohit Bhanushali, and Huan Liu. 2019. Deep Anomaly Detection on Attributed Networks. In *Proceedings of the 2019 SIAM International Conference on Data Mining (SDM)*, 594-602. https://doi.org/10.1137/1.9781611975673.67.
 .. [#Dou2020Enhancing] Yingtong Dou, Zhiwei Liu, Li Sun, Yutong Deng, Hao Peng, and Philip S. Yu. 2020. Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters. In *Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM)*, 315-324.
 .. [#liu2021anomaly] Yixin Liu, Zhao Li, Shirui Pan, Chen Gong, Chuan Zhou, and George Karypis. 2022. Anomaly Detection on Attributed Networks via Contrastive Self-Supervised Learning. *IEEE Transactions on Neural Networks and Learning Systems (TNNLS)*, 33(6), 2378-2392.
+.. [#wang2021one] Xuhong Wang, Baihong Jin, Ying Du, Ping Cui, Yingshui Tan, and Yupu Yang. 2021. One-class Graph Neural Networks for Anomaly Detection in Attributed Networks. *Neural Computing and Applications*, 33(18), 12073-12085.
 .. [#Liu2021Pick] Yang Liu, Xiang Ao, Zidi Qin, Jianfeng Chi, Jinghua Feng, Hao Yang, and Qing He. 2021. Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection. In *Proceedings of the Web Conference 2021 (WWW)*, 3168-3177.
 .. [#Jin2021ANEMONE] Ming Jin, Yixin Liu, Yu Zheng, Lianhua Chi, Yuan-Fang Li, and Shirui Pan. 2021. ANEMONE: Graph Anomaly Detection with Multi-Scale Contrastive Learning. In *Proceedings of the 30th ACM International Conference on Information and Knowledge Management (CIKM)*, 3122-3126.
 .. [#Zheng2021Generative] Yu Zheng, Ming Jin, Yixin Liu, Lianhua Chi, Khoa T. Phan, and Yi-Ping Phoebe Chen. 2021. Generative and Contrastive Self-Supervised Learning for Graph Anomaly Detection. *IEEE Transactions on Knowledge and Data Engineering (TKDE)*.
 .. [#Tang2022Rethinking] Jianheng Tang, Jiajin Li, Ziqi Gao, and Jia Li. 2022. Rethinking Graph Neural Networks for Anomaly Detection. In *Proceedings of the 39th International Conference on Machine Learning (ICML)*, 21076-21089.
 .. [#Gao2023Addressing] Yuan Gao, Xiang Wang, Xiangnan He, Zhenguang Liu, Huamin Feng, and Yongdong Zhang. 2023. Addressing Heterophily in Graph Anomaly Detection: A Perspective of Graph Spectrum. In *Proceedings of the ACM Web Conference 2023 (WWW)*, 1528-1538.
+.. [#niu2023graph] Chaoxi Niu, Guansong Pang, and Ling Chen. 2023. Graph-level Anomaly Detection via Hierarchical Memory Networks. In *Joint European Conference on Machine Learning and Knowledge Discovery in Databases (ECML PKDD)*, 201-218.
 .. [#Qiao2023Truncated] Hezhe Qiao and Guansong Pang. 2023. Truncated Affinity Maximization: One-class Homophily Modeling for Graph Anomaly Detection. In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#roy2024gad] Amit Roy, Juan Shu, Jia Li, Carl Yang, Olivier Elshocht, Jeroen Smeets, and Pan Li. 2024. GAD-NR: Graph Anomaly Detection via Neighborhood Reconstruction. In *Proceedings of the 17th ACM International Conference on Web Search and Data Mining (WSDM)*, 576-585.
 .. [#Qiao2024Generative] Hezhe Qiao, Qingsong Wen, Xiaoli Li, Ee-Peng Lim, and Guansong Pang. 2024. Generative Semi-supervised Graph Anomaly Detection. In *Advances in Neural Information Processing Systems (NeurIPS)*.
-.. [#Li2022OOD] Haoyang Li, Xin Wang, Ziwei Zhang, and Wenwu Zhu. 2022. Out-Of-Distribution Generalization on Graphs: A Survey. *arXiv preprint arXiv:2202.07987*.
 .. [#Yehudai2021From] Gilad Yehudai, Ethan Fetaya, Eli Meirom, Gal Chechik, and Haggai Maron. 2021. From Local Structures to Size Generalization in Graph Neural Networks. In *Proceedings of the 38th International Conference on Machine Learning (ICML)*, 11975-11986.
 .. [#Zhu2021Shift] Qi Zhu, Natalia Ponomareva, Jiawei Han, and Bryan Perozzi. 2021. Shift-Robust GNNs: Overcoming the Limitations of Localized Graph Training Data. In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Wu2022Handling] Qitian Wu, Hengrui Zhang, Junchi Yan, and David Wipf. 2022. Handling Distribution Shifts on Graphs: An Invariance Perspective. In *International Conference on Learning Representations (ICLR)*.
@@ -388,9 +375,3 @@ References
 .. [#Gui2023Joint] Shurui Gui, Meng Liu, Xiner Li, Youzhi Luo, and Shuiwang Ji. 2023. Joint Learning of Label and Environment Causal Independence for Graph Out-of-Distribution Generalization. In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Chen2023Does] Yongqiang Chen, Yatao Bian, Kaiwen Zhou, Binghui Xie, Bo Han, and James Cheng. 2023. Does Invariant Graph Learning via Environment Augmentation Learn Invariance? In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Wu2024Graph] Qitian Wu, Fan Nie, Chenxiao Yang, Tianyi Bao, and Junchi Yan. 2024. Graph Out-of-Distribution Generalization via Causal Intervention. In *Proceedings of the ACM Web Conference 2024 (WWW)*, 850-860.
-.. [#Sajadmanesh2021Locally] Sina Sajadmanesh and Daniel Gatica-Perez. 2021. Locally Private Graph Neural Networks. In *Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security (CCS)*, 2130-2145.
-.. [#Hsieh2023NetFense] I-Chung Hsieh and Cheng-Te Li. 2023. NetFense: Adversarial Defenses Against Privacy Attacks on Neural Networks for Graph Data. *IEEE Transactions on Knowledge and Data Engineering (TKDE)*, 35(1), 796-809.
-.. [#Sajadmanesh2023GAP] Sina Sajadmanesh, Ali Shahin Shamsabadi, Aurelien Bellet, and Daniel Gatica-Perez. 2023. GAP: Differentially Private Graph Neural Networks with Aggregation Perturbation. In *32nd USENIX Security Symposium (USENIX Security 23)*, 3223-3240.
-.. [#Zhou2023On] Zhanke Zhou, Chenyu Zhou, Xuan Li, Jiangchao Yao, Quanming Yao, and Bo Han. 2023. On Strengthening and Defending Graph Reconstruction Attack with Markov Chain Approximation. In *Proceedings of the 40th International Conference on Machine Learning (ICML)*, 42843-42877.
-.. [#Xu2024OblivGNN] Zhibo Xu, Shangqi Lai, Xiaoning Liu, Alsharif Abuadbba, Xingliang Yuan, and Xun Yi. 2024. OblivGNN: Oblivious Inference on Transductive and Inductive Graph Neural Network. In *33rd USENIX Security Symposium (USENIX Security 24)*, 2209-2226.
-.. [#Lou2025GRID] Jiacheng Lou, Xiaoyu Zhang, Rui Zhang, Xingliang Yuan, Neil Zhenqiang Gong, and Nian-Feng Tzeng. 2025. GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models. In *2025 IEEE Symposium on Security and Privacy (S&P)*, 2095-2113.
