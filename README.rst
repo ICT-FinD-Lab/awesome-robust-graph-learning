@@ -72,12 +72,15 @@ Adaptive-attack Audit   Are Defenses for Graph Neural Networks Robust?          
 1.2. Tutorials
 ^^^^^^^^^^^^^^
 
-=======================================================================  =====  ====  ===============================  ===========================================================================================================
-Tutorial Title                                                           Venue  Year  Ref                              Materials
-=======================================================================  =====  ====  ===============================  ===========================================================================================================
-Robust Graph Learning in Finance                                         ICAIF  2025  [#Ao2025RobustFinanceTutorial]_  `[HTML] <https://qwer12191.github.io/robust-graph-learning/>`_, `[ICAIF] <https://icaif25.org/tutorials/>`_
-Robust Graph Learning on the Web: Challenges, Methods, and Applications  WWW    2026  [#Ao2026RobustGraphTutorial]_    `[HTML] <https://qwer12191.github.io/Robust-Graph-Learning-on-Web/>`_
-=======================================================================  =====  ====  ===============================  ===========================================================================================================
+=================================================================================================  =====  ====  ===============================  =======================================================================================================================
+Tutorial Title                                                                                     Venue  Year  Ref                              Materials
+=================================================================================================  =====  ====  ===============================  =======================================================================================================================
+Robust Graph Learning in Finance                                                                   ICAIF  2025  [#Ao2025RobustFinanceTutorial]_  `[HTML] <https://qwer12191.github.io/robust-graph-learning/>`_, `[ICAIF] <https://icaif25.org/tutorials/>`_
+Robust Graph Learning on the Web: Challenges, Methods, and Applications                            WWW    2026  [#Ao2026RobustGraphTutorial]_    `[HTML] <https://qwer12191.github.io/Robust-Graph-Learning-on-Web/>`_
+Graph Machine Learning under Distribution Shifts: Adaptation, Generalization and Extension to LLM  AAAI   2025  [#Wang2025DistShiftTutorial]_    `[HTML] <https://ood-generalization.com/aaai2025Tutorial.htm>`_, `[WWW '25] <https://doi.org/10.1145/3701716.3715863>`_
+Beyond Graph Distribution Shifts: LLMs, Adaptation, and Generalization                             IJCAI  2025  [#Wang2025BeyondTutorial]_       `[HTML] <https://ood-generalization.com/ijcai2025Tutorial.htm>`_
+Deep Learning for Graph Anomaly Detection                                                          IJCAI  2025  [#Qiao2025DLGADTutorial]_        `[IJCAI] <https://2025.ijcai.org/tutorials-3/>`_
+=================================================================================================  =====  ====  ===============================  =======================================================================================================================
 
 ----
 
@@ -306,6 +309,9 @@ References
 .. [#Mujkanovic2022Are] Felix Mujkanovic, Simon Geisler, Stephan Gunnemann, and Aleksandar Bojchevski. 2022. Are Defenses for Graph Neural Networks Robust? In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Ao2025RobustFinanceTutorial] Xiang Ao, Yang Liu, Guansong Pang, Yuanhao Ding, Hezhe Qiao, Dawei Cheng, and Qing He. 2025. Robust Graph Learning in Finance. In *Proceedings of the 6th ACM International Conference on AI in Finance (ICAIF)*.
 .. [#Ao2026RobustGraphTutorial] Xiang Ao, Yang Liu, Guansong Pang, Yuanhao Ding, Hezhe Qiao, Dawei Cheng, and Qing He. 2026. Robust Graph Learning on the Web: Challenges, Methods, and Applications. In *Companion Proceedings of the ACM Web Conference (WWW)*.
+.. [#Wang2025DistShiftTutorial] Xin Wang, Haoyang Li, Zeyang Zhang, and Wenwu Zhu. 2025. Graph Machine Learning under Distribution Shifts: Adaptation, Generalization and Extension to LLM. AAAI 2025 Tutorial. Also in *Companion Proceedings of the ACM Web Conference 2025 (WWW)*. https://doi.org/10.1145/3701716.3715863.
+.. [#Wang2025BeyondTutorial] Xin Wang, Haoyang Li, Zeyang Zhang, and Wenwu Zhu. 2025. Beyond Graph Distribution Shifts: LLMs, Adaptation, and Generalization. Tutorial at the 34th International Joint Conference on Artificial Intelligence (IJCAI).
+.. [#Qiao2025DLGADTutorial] Hezhe Qiao, Hanghang Tong, Bo An, Irwin King, Charu Aggarwal, and Guansong Pang. 2025. Deep Learning for Graph Anomaly Detection. Tutorial at the 34th International Joint Conference on Artificial Intelligence (IJCAI).
 .. [#Dai2018Adversarial] Hanjun Dai, Hui Li, Tian Tian, Xin Huang, Lin Wang, Jun Zhu, and Le Song. 2018. Adversarial Attack on Graph Structured Data. In *Proceedings of the 35th International Conference on Machine Learning (ICML)*, 1115-1124.
 .. [#Zugner2018Adversarial] Daniel Zugner, Amir Akbarnejad, and Stephan Gunnemann. 2018. Adversarial Attacks on Neural Networks for Graph Data. In *Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD)*, 2847-2856. https://doi.org/10.1145/3219819.3220078.
 .. [#Xu2019Topology] Kaidi Xu, Hongge Chen, Sijia Liu, Pin-Yu Chen, Tsui-Wei Weng, Mingyi Hong, and Xue Lin. 2019. Topology Attack and Defense for Graph Neural Networks: An Optimization Perspective. In *Proceedings of the 28th International Joint Conference on Artificial Intelligence (IJCAI)*, 3961-3967.
@@ -375,3 +381,4 @@ References
 .. [#Gui2023Joint] Shurui Gui, Meng Liu, Xiner Li, Youzhi Luo, and Shuiwang Ji. 2023. Joint Learning of Label and Environment Causal Independence for Graph Out-of-Distribution Generalization. In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Chen2023Does] Yongqiang Chen, Yatao Bian, Kaiwen Zhou, Binghui Xie, Bo Han, and James Cheng. 2023. Does Invariant Graph Learning via Environment Augmentation Learn Invariance? In *Advances in Neural Information Processing Systems (NeurIPS)*.
 .. [#Wu2024Graph] Qitian Wu, Fan Nie, Chenxiao Yang, Tianyi Bao, and Junchi Yan. 2024. Graph Out-of-Distribution Generalization via Causal Intervention. In *Proceedings of the ACM Web Conference 2024 (WWW)*, 850-860.
+
